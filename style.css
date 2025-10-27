@@ -1,0 +1,921 @@
+@font-face {
+    font-family: Domaine;
+    font-family: Editorial;
+    font-family: Canopee, sans-serif;
+    src: url(./Editorial.ttf);
+    src: url(./Domaine.ttf);
+    src: url(./Canopee, sans-serif.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: #bfb7ae;
+    overflow: hidden;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #bfb7ae;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    #page1 {
+        background-color: red;
+        min-height: 10%;
+        
+    }
+}
+
+/* ---------------------------------NAVBAR---------------------------------------- */
+#nav{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+
+
+#nav img{
+    height: 20px;
+    width: 30%;
+}
+
+#nav h5{
+    font-size: 16px;
+    font-weight: normal;
+    width: 30%;
+}
+
+#nav i{
+    width: 30%;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    #nav {
+        height: auto;
+        display: flex;
+        padding: 12px 30px;
+    }
+
+   #nav i {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+    #nav img{
+        margin-left: 35%;
+
+    }
+    #nav h5{
+        display: none;
+    }
+}
+
+/* -------------------------------------2nd SECTION------------------------------------------------------- */
+
+#elems{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+
+#elem2{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #424242;
+    padding: 20px 30px;
+
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+}
+
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#image-div:hover img{
+    scale: 1.1;
+}
+
+#elem1 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Canopee, sans-serif;
+}
+#elem3 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Canopee, sans-serif;
+}
+
+#elems h4 span{
+    background-color: #ba3c13;
+    color: #bdbcbc;
+    font-size: 16px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#elem1 p{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+#elem3 p{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+#elem2 h2{
+    font-family: Canopee, sans-serif;
+    font-size: 75px;
+    font-weight: 100;
+}
+#elem2 h3{
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1;
+    font-family: serif;
+    color: #353535;
+}
+
+#elem2 h6{
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+}
+
+
+#elem2 h6 span {
+  font-weight: 700; /* bold for TIP! */
+  font-family: Canopee, sans-serif;
+  color: #3c3c3c;
+}
+
+@media (max-width: 768px) {
+    #elems {
+        display: none;
+    }
+
+}
+
+/* --------------------------------------TITLE--------------------------------------------------------- */
+
+#title h1{
+    background-color: #1c1c19;
+    margin: 0 40px;
+    color: #bfb7ae;
+    font-size: 530px;
+    font-family: Canopee, sans-serif;
+    font-weight: 100;
+    letter-spacing: -10px;
+    text-align: center;
+    line-height: 0.8;       /* 🔹 Text ke upar–neeche ka space kam kare */
+    padding: 20px 20px 10px 10px;        /* 🔹 Background ke top–bottom padding adjust kare */
+    display: inline-block;  /* 🔹 Background text ke hisaab se fit kare */
+}
+
+@media (max-width: 768px) {
+    #title h1 {
+        font-size: 160px;
+        margin: 12px 12px;
+        padding: 10px 10px 5px 5px;
+        
+    }
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+#page2{
+    height: 165vh;
+    width: 100%;
+    background-color: #bfb7ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5px;
+}
+
+#page2-left{
+    height: 100%;
+    width: 38%;
+    padding: 0 30px;
+}
+
+#page2-left h2{
+    font-size: 130px;
+    font-family: Canopee, sans-serif;
+    line-height: 150px;
+    font-weight: 100;
+    letter-spacing: -8px;
+}
+
+#page2-left h2 span{
+    font-size: 220px;
+    font-family: Canopee, sans-serif;
+    font-weight: 500;
+}
+
+#page2-left img{
+    height: 40%;
+    width: 95%;
+    object-fit: cover;
+}
+
+#page2-left p{
+    font-size: 34px;
+    font-family: Domaine;
+    color: #2f2f2f;
+    margin-top: 20px;
+    
+}
+
+#page2-left p span{
+    background-color: #1c1c19;
+    font-size: 100px;
+    font-family: Canopee, sans-serif;
+}
+
+#page2-right{
+    height: 100%;
+    width: 80%;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+#page2-right img{
+    height: 48%;
+    width: 102%;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#page2-right h1{
+    font-size: 100px;
+    font-family: Canopee, sans-serif;
+    margin-top: 80px;
+    transform: scaleY(1.2);
+    line-height: 14vh;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+    #page2 {
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    #page2-left{
+        display: none;
+    }
+
+    #page2-right {
+        width: 100%;
+        padding: 0 20px;
+        
+    }
+
+    #page2-left h2 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    #page2-left h2 span {
+        font-size: 130px;
+    }
+
+    #page2-left p {
+        font-size: 24px;
+    }
+
+    #page2-right h1 {
+        font-size: 60px;
+        line-height: normal;
+    }
+
+  
+}
+
+#page3{
+    background-color: #bfb7ae;
+    position: relative;
+    height: 60vh;
+}
+
+#page3 h1{
+    font-size: 450px;
+    font-family: canopee;
+    width: 74%;
+    background-color: black;
+    color: #bfb7ae;
+    font-weight: 100;
+    letter-spacing: -20px;
+    line-height: 380px;
+    margin-left: 40px;
+    padding: 0 20px;
+}
+
+#page3 img{
+    position: absolute;
+    height: 380px;
+    top: 0;
+    right: 1.5%;
+}
+
+
+#page4{
+    width: 100%;
+    background-color: #bfb7ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 18px;
+    height: 100%;
+    
+}
+
+#page4-left1{
+    width: 50%;
+    height: 50%;
+    padding: 0 20px;
+    margin-bottom: 50%;
+}
+
+
+#page4-left1 h2{
+    font-size: 48px;
+    letter-spacing: -6px;
+    transform: scaleY(1.5);
+    font-weight: 600;
+}
+
+#page4-left1 h3{
+    font-size: 38px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 40px;
+    transform: scaleY(1.2);
+    margin-top: 30px;
+}
+
+#page4-left1 p span{
+    font-weight: bold;
+}
+
+#page4-left1 p{
+    font-size: 20px;
+    margin-top: 35px;
+    letter-spacing: -1.2px;
+    transform: scaleY(1.2);
+    font-weight: lighter;
+    color: #4b4b4b;
+}
+
+#page4-left2{
+    margin-top: 10px;
+    height: 100%;
+    width: 70%;
+    border-left: 1px solid #222;
+    border-left: 1px solid #424242;
+    margin-bottom: 50%;
+}
+
+#page4-left2 img{
+    height: 100%;
+    width: 75%;
+    margin-left: 60px;
+   
+}
+
+#page4-left2 h2{
+    font-size: 24px;
+    transform: scaleY(1.4);
+    letter-spacing: -3px;
+    margin-top: 12px;
+    margin-left: 60px;
+}
+
+#page4-left2 p{
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 22px;
+    font-family: Domaine;
+    color: #4b4b4b;
+    margin-left: 60px;
+}
+
+#page4-img{
+   position: absolute; 
+   margin-top: 68%;
+   margin-bottom: 50%;
+   padding: 0 20px;
+}
+
+#page4-img img{
+    height: 100%;
+    width: 62%;
+}
+
+
+#page4-right{
+    height: 100%;
+    width: 65%;
+    border-left: 1px solid #222;
+    padding: 65px 0;
+    padding-bottom: 10px;
+    margin-bottom: 5%;
+    
+}
+
+#page4-right h1{
+    font-size: 70px;
+    transform: scaleY(1.8);
+    letter-spacing: -8px;
+    margin-left: 48px;
+}
+
+#page4-right h1 span{
+    font-size: 115px;
+    line-height: 20px;
+    transform: scaleY(1.8);
+    letter-spacing: -10px;
+    margin-top: 10px;
+}
+
+#page4-right h5{
+    margin-top: 80px;
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: 100;
+}
+
+#page4-right h4{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: 100;
+    
+}
+
+#circle-btn{
+    height: 200px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: #cbc2b8;
+    border: 0.2px solid #7d7d7d;
+    margin-left: 8%;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#circle-btn h2{
+    font-size: 80px;
+    transform: scaleY(1.8);
+    font-weight: 100;
+    transform: translateX(-30%);
+    font-family: Canopee;
+    transition: all ease 0.6s;
+}
+
+#circle-btn img{
+    width: 40%;
+    transform: translateX(-140%);
+    transition: all ease 0.6s;
+}
+
+#circle-btn:hover img{
+    transform: translateX(80%);
+    
+}
+#circle-btn:hover h2{
+    transform: translateX(100%);
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #bfb7ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    
+    
+}
+
+#page5-highlight{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35%;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    gap: 90px;
+}
+
+#page5-1, #page5-2, #page5-3, #page5-4{
+    height: 100%;
+    width: 23%;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+#page5-1 h2, #page5-2 h2, #page5-3 h2, #page5-4 h2{
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    transform: scaleY(1.5);
+}
+
+#page5-1 h1, #page5-2 h1, #page5-3 h1, #page5-4 h1{
+    font-size: 60px;
+    font-family: Canopee, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+#page5-1 h1:nth-child(3), #page5-2 h1:nth-child(3), #page5-3 h1:nth-child(3), #page5-4 h1:nth-child(3){
+    font-size: 150px;
+    font-family: Canopee, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 20%;
+    font-weight: 100;
+}
+
+#page6 {
+    background-color: #bfb7ae;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: -28%;
+    margin-bottom: 30px;
+}
+
+#page6 .image1{
+    width: 120%;
+    height: 50%;
+    padding-left: 35px;
+}
+
+#page6 .heading1{
+    position: absolute;
+    display: flex;
+    margin-top: -21%;
+    font-size: 250px;
+    transform: scaleY(2);
+    letter-spacing: -10px;
+    font-family: Domaine;
+    margin-left: 18%;
+}
+
+#page6 .heading2{
+    position: absolute;
+    margin-top: 1%;
+    font-size: 300px;
+    transform: scaleY(1.5);
+    letter-spacing: -42px;
+    font-family: Domaine;
+    margin-left: 2%;
+}
+
+#page6 .image2{
+    position: absolute;
+    width: 46%;
+    height: 12.2%;
+    margin-top: -23%;
+    margin-left: 52%;
+}
+
+
+#page7{
+    background-color: #bfb7ae;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: -12%;
+}
+
+#page7 .image3{
+    width: 100%;
+    height: 48%;
+    padding-left: 35px;
+    margin-top: 50%;
+    position: relative;
+}
+
+#page7 .heading3{
+    position: absolute;
+    display: flex;
+    margin-top: -21%;
+    font-size: 250px;
+    transform: scaleY(2);
+    letter-spacing: -12px;
+    font-family: Domaine;
+    margin-left: 27%;
+}
+
+#page8{
+    background-color: #bfb7ae;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    margin-top: -5%;
+    position: relative;
+}
+
+#page8-artisan {
+  text-align: left;
+  position: relative;
+}
+
+.heading4 {
+  position: relative;
+  display: inline-block;
+  font-size: 250px;
+  transform: scaleY(1.5);
+  letter-spacing: -30px;
+  font-family: Domaine, serif;
+  background-color: #222;
+  color: #bfb7ae;
+  padding: 10px 30px 2px 22px; /* ✅ adjust this to control top/bottom height */
+  margin-left: 33px;
+  line-height: 0.8; /* ✅ reduces vertical space inside text */
+}
+
+.heading4-1 {
+    position: absolute;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: Domaine, serif;
+    color: #4b4b4b;
+    margin-top: -26%;
+    margin-left: 103%;
+    margin-right: 40px;
+    width: 50%;
+    transform: scaleY(1.1);
+    font-weight: 100;
+    line-height: normal;
+    color: #1c1c19;
+}
+
+.heading4-1 span{
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+#elems-2{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    
+}
+
+#elem1-2{
+    width: 30%;
+    height: 100%;
+}
+
+#elem2-2{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #424242;
+    padding: 20px 30px;
+
+}
+#elem3-3{
+    width: 30%;
+    height: 100%;
+}
+
+#elem1-2 #image-div-1{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3-3 #image-div-2{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#image-div-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#image-div-1:hover img{
+    scale: 1.1;
+}
+#image-div-2:hover img{
+    scale: 1.1;
+}
+
+#elem1-2 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Canopee, sans-serif;
+}
+#elem3-3 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Canopee, sans-serif;
+}
+
+#elems-2 h4 span{
+    background-color: #ba3c13;
+    color: #bdbcbc;
+    font-size: 16px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#elem1-2 p{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+#elem3-3 p{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+#elem2-2 h2{
+    font-family: Canopee, sans-serif;
+    font-size: 75px;
+    font-weight: 100;
+}
+#elem2-2 h3{
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1;
+    font-family: serif;
+    color: #353535;
+}
+
+#elem2-2 h6{
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+}
+
+
+#elem2-2 h6 span {
+  font-weight: 700; /* bold for TIP! */
+  font-family: Canopee, sans-serif;
+  color: #3c3c3c;
+}
+
+#page9{
+    padding: 30px 0;
+    width: 100%;
+    background-color: #bfb7ae;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+#page9::-webkit-scrollbar{
+    display: none;
+}
+
+#page9 h1{
+    font-size: 80px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    align-items: inline-block;
+    transform: scaleY(1.4);
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#page9 h1 span{
+    font-family: Canopee;
+    background-color: #1b1b1b;
+    color: #bdbcbc;
+    padding: 0px 10px;
+    margin-right: 10px;
+    font-size: 75px;
+    
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+        
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#footer{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+
+#footer-1{
+    font-weight: bold;
+}
