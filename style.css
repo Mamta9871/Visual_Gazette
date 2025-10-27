@@ -17,6 +17,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    
 }
 
 #main{
@@ -739,7 +740,7 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding: 40px 60px;
-    
+    background-color: #bfb7ae;
 }
 
 #elem1-2{
@@ -884,6 +885,7 @@ html, body{
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    
 }
 
 #page9 h1 span{
@@ -914,6 +916,7 @@ html, body{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #222;
+    background-color: #bfb7ae;
 }
 
 #footer-1{
